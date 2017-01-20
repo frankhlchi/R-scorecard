@@ -14,7 +14,7 @@ ggplot(german_credit, aes(x = Age,y = ..count..,)) + geom_histogram(fill = "blue
 ggplot(german_credit, aes(x =Creditability,y = ..count..,)) + geom_histogram(fill = "blue", colour = "grey60" , alpha = 0.2,stat="count")
 
 #Optimal Binning
-Durationresult=smbinning(df=train,y="Creditability",x="Duration",p=0.05)
+Durationresult=smbinning(df=train2,y="Creditability",x="Duration",p=0.05)
 CreditAmountresult=smbinning(df=train2,y="Creditability",x="CreditAmount",p=0.05) 
 Ageresult=smbinning(df=train2,y="Creditability",x="Age",p=0.05) 
 
